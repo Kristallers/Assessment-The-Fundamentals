@@ -1,10 +1,12 @@
+const navbar = document.getElementById('navbar');
 const audioPlayer = document.getElementById('siteHeaderAudioPlayer');
 const logo = document.getElementById('siteHeaderLogo');
 const title = document.getElementById('siteHeaderTitle');
 const flexContainer = document.getElementById('flexContainer');
-const footer = document.getElementById('footer')
+const footer = document.getElementById('footer');
 
 function addClasses() {
+  navbar.classList.replace('navbar', 'navbar--active')
   audioPlayer.classList.replace('site-header__audio', 'site-header__audio--active');
   logo.classList.replace('site-header__logo', 'site-header__logo--active');
   title.classList.replace('site-header__title', 'site-header__title--active');
